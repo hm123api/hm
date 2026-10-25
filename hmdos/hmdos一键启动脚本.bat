@@ -1,9 +1,5 @@
 @echo off
 chcp 65001 >nul
-echo ======================================
-echo          hmdos 一键启动脚本
-echo ======================================
-echo.
 echo [1]正在编译 hmdos.java ...
 javac -encoding UTF-8 hmdos.java
 if %errorlevel% neq 0 (
@@ -12,7 +8,6 @@ if %errorlevel% neq 0 (
     exit /b
 )
 echo 编译成功！
-echo.
 echo [2]启动 hmdos系统
 echo --------------------------------------
 java -Dfile.encoding=UTF-8 hmdos
